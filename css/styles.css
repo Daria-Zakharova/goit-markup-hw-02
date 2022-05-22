@@ -44,11 +44,12 @@ body {
 }
 
 .logo-accent,
-.navigation .current {
+.nav-link.current {
     color: var(--accent-color);
 }
 
-.navigation {
+.nav-link,
+.header .contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
