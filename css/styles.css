@@ -1,0 +1,200 @@
+/* Global styles and vars */
+
+:root {
+    --main-bg-color: #ffffff;
+    --section-bg-color: #f5f4fa;
+    --footer-color: #2f303a;
+    --accent-color: #2196f3;
+
+    --border-color: #eeeeee;
+
+    --title-txt-color: #212121;
+    --txt-color: #757575;
+    --sec-txt-color: #ffffff;
+    /* тут вопрос, если переменные используются на случай изменения цвета в макете, есть смысл задавать один цвет через разные переменные для фона и текста? */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+
+    color: var(--txt-color);
+    background-color: var(--main-bg-c);
+}
+
+/* Navigation */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: var(--title-txt-color);
+}
+
+.logo-accent,
+.navigation .current {
+    color: var(--accent-color);
+}
+
+.navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.nav-link {
+    color: var(--title-txt-color);
+}
+
+/* --Main-- */
+
+.hero {
+    background-color: var(--footer-color);
+}
+
+.page-title {
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    color: var(--sec-txt-color);
+}
+
+/* --Buttons-- */
+.button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.hero .button {
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--sec-txt-color);
+    background-color: var(--accent-color);
+}
+
+.filters .button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    color: var(--title-txt-color);
+    background-color: var(--section-bg-color);
+}
+
+.filters .button:hover,
+.filters .button:focus {
+    border: none;
+    outline: none;
+    color: var(--sec-txt-color);
+    background-color: var(--accent-color);
+}
+
+/* Headings */
+
+.section-title,
+.subtitle {
+    letter-spacing: 0.03em;
+
+    color: var(--title-txt-color);
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.features .subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.staff .subtitle {
+    /* text-align: center; */
+    font-weight: 500;
+}
+
+.projects .subtitle {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+/* Content */
+.features .text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.staff {
+    background-color: var(--section-bg-color);
+}
+
+.staff-card {
+    background-color: var(--main-bg-color);
+}
+
+/* Footer */
+.footer {
+
+    background-color: var(--footer-color);
+}
+
+.footer .logo {
+    color: var(--sec-txt-color);
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--sec-txt-color);
+}
+
+.footer .contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts:hover,
+.contacts:focus {
+    color: var(--accent-color);
+}
